@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vinícius Buttini</title>
+
+        <!--Bootstrap-->
+        <!-- CSS only -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+            crossorigin="anonymous"
+        />
+        <!-- Style-CSS -->
+        <link
+            rel="stylesheet"
+            href="css/style.css"
+            type="text/css"
+            media="all"
+        />
+
+        <!--favicon (ícone da aba)-->
+        <link rel="icon" type="imagem/png" href="./images/logo.png" />
+
+        <!--Link do script JavaScript-->
+        <script type="text/javascript" src="./js/script.js"></script>
+
+    </head>
+    <body onload="loadEvent()">
+
+        <!--Início do cabeçalho-->
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <div class="container">
+                    <!--Logo-->
+                    <a href="index.html" class="navbar-brand">
+                        <img src="./images/logo.png" height="100" width="100" />
+                    </a>
+
+                    <!--Botões de seleção do plano de fundo-->
+                    <div class="ms-5 px-2">
+                        <button type="button" class="btn btn-light btn-circle" id="btn-bg-1" onclick="changeBg('#151515')">
+                        <button type="button" class="btn btn-light btn-circle ms-2" id="btn-bg-2" onclick="changeBg('#646363')">
+                        <button type="button" class="btn btn-light btn-circle ms-2" id="btn-bg-3" onclick="changeBg('#a7a6a6')">
+                    </div>
+
+                    <!--Links de navegação-->
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item divisor">
+                            <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item divisor">
+                                <a class="nav-link text-white" href="experiencias.html"
+                                    >Experiências</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tecnologias.html"
+                                    >Tecnologias</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contatos.html"
+                                    >Contatos</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--Início do conteúdo principal-->
+        <main class="h-auto position-relative my-3">
+            <section>
+                <div class="container my-auto">
+                    <div class="row text-center">
+                        <div class="col align-self-center">
+                            <!--Cards de experiências-->
+                            <div class="card bg-dark bg-opacity-10 rounded m-3 p-5 border-white border-opacity-10">
+                                <div class="container text-white mb-5">
+                                    <h3>Aprendiz Mecânico de Manutenção</h3>
+                                    <h5>Ford Motor Company</h5>
+                                    <p style="font-size: 0.7rem;">01/2017 - 12/2018</p>
+                                    <p style="font-size: 0.8rem;" class="text-break">
+                                        Processo de manutenção preventiva e corretiva - Resolução de problemas e vivência em empresa multinacional
+                                    </p>
+                                </div>
+                                <div class="container text-white">
+                                    <h3>Desenvolvedor de Sistemas em Excel</h3>
+                                    <h5>Autônomo</h5>
+                                    <p style="font-size: 0.7rem;">03/2021 - 08/2022</p>
+                                    <p style="font-size: 0.8rem;" class="text-break">
+                                        Acompanhamento ao cliente desde a intenção de compra até pós-entrega. Entendimento de todo o processo e necessidade do cliente e desenvolvimento de ferramentas automatizadas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Cards de experiências-->
+                        <div class="col align-self-center">
+                            <div class="card bg-dark bg-opacity-10 rounded m-3 p-5 border-white border-opacity-10">
+                                <div class="container text-white mb-5">
+                                    <h3>Estagiário de Desenvolvimento Backend</h3>
+                                    <h5>Develcode</h5>
+                                    <p style="font-size: 0.7rem;">01/2022 - 08/2022</p>
+                                    <p style="font-size: 0.8rem;" class="text-break">
+                                        Desenvolvimento backend com Java e Spring para grandes empresas
+                                    </p>
+                                </div>
+                                <div class="container text-white">
+                                    <h3>Desenvolvedor de Automações</h3>
+                                    <h5>GFL | Lear Corporation</h5>
+                                    <p style="font-size: 0.7rem;">08/2022 - Atualmente</p>
+                                    <p style="font-size: 0.8rem;" class="text-break">
+                                        Desenvolvimento de automações de processos com VBA e Python
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--Fim de conteúdo-->
+
+        <!--Início do rodapé-->
+        <footer class="text-center">
+            <div class="container">
+                <p class="mb-1 text-footer">"I hope everybody could get rich and famous and will have everything they ever dreamed of, so they will know its not the answer" <br>
+                -Jim Carrey</p>
+                <p class="text-copyright fw-light">Copyright &copy 2022 Vinícius Buttini. Todos os direitos reservados</p>
+            </div>
+        </footer>
+        <!--Fim do rodapé-->
+
+    </body>
+</html>

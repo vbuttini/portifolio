@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vinícius Buttini</title>
+
+        <!--Bootstrap-->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+            crossorigin="anonymous"
+        />
+        <!-- Style-CSS -->
+        <link
+            rel="stylesheet"
+            href="css/style.css"
+            type="text/css"
+            media="all"
+        />
+
+        <!--Link para ícones de contato-->
+        <script src="https://kit.fontawesome.com/597beaf98f.js" crossorigin="anonymous"></script>
+
+        <!--favicon (ícone da aba)-->
+        <link rel="icon" type="imagem/png" href="./images/logo.png" />
+
+        <!--Link do script javascript-->
+        <script type="text/javascript" src="./js/script.js"></script>
+
+    </head>
+    <body onload="loadEvent()">
+
+        <!--Início do Cabeçalho-->
+        <header>
+            <!--Início da barra de navegação-->
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <div class="container">
+                    <!--Logo-->
+                    <a href="index.html" class="navbar-brand">
+                        <img src="./images/logo.png" height="100" width="100"/>
+                    </a>
+
+                    <!--Botões com cores de background-->
+                    <div class="ms-5 px-2">
+                        <button type="button" class="btn btn-light btn-circle" id="btn-bg-1" onclick="changeBg('#151515')">
+                        <button type="button" class="btn btn-light btn-circle ms-2" id="btn-bg-2" onclick="changeBg('#646363')">
+                        <button type="button" class="btn btn-light btn-circle ms-2" id="btn-bg-3" onclick="changeBg('#a7a6a6')">
+                    </div>
+
+                    <!--Links de navegação-->
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item divisor">
+                                <a class="nav-link" href="experiencias.html"
+                                    >Experiências</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tecnologias.html"
+                                    >Tecnologias</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="contatos.html"
+                                    >Contatos</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--Fim do cabeçalho-->
+
+        <!--Início do conteúdo principal-->
+        <main class="h-auto position-relative my-3">
+            <section>
+                <div class="container my-auto">
+                    <div class="row text-center">
+                        <div class="col align-self-center">
+                            <div class="card bg-dark bg-opacity-10 rounded m-3 p-5 border-white border-opacity-10">
+                                <div class="row text-white">
+                                    <!--Ícones de contato-->
+                                    <div class="col">
+                                        <a href="https://wa.me/5512997384800" class="icone" target="_blank">
+                                            <i class="fa-brands fa-whatsapp"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="https://github.com/vbuttini" class="icone" target="_blank">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="https://www.linkedin.com/in/viniciusbuttini/" class="icone" target="_blank">
+                                            <i class="fa fa-linkedin-square"aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col align-self-center">
+                            <div class="card bg-dark bg-opacity-10 rounded m-3 p-5 border-white border-opacity-10">
+                                <div class="text-white text-start">
+                                    <!--Formulário de envio de email-->
+                                    <form id="formulario" action="mailto::vbuttini22@gmail.com" method="post" enctype="text/plain">
+                                        <div class="mb-3">
+                                            <label for="endereco-email" class="form-label">Seu email:</label>
+                                            <input type="email" class="form-control" id="endereco-email" placeholder="name@example.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="assunto" class="form-label">Assunto:</label>
+                                            <input type="text" class="form-control" id="assunto" placeholder="Insira o assunto aqui">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="texto-email" class="form-label">Texto:</label>
+                                            <textarea class="form-control" id="texto-email" rows="4"></textarea>
+                                        </div>
+                                        <div class="mt-5 text-center">
+                                            <input type="submit" class="btn w-25 botao" onclick="limparForm()">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--Fim do conteúdo principal-->
+
+        <!--Início do rodapé-->
+        <footer class="text-center">
+            <div class="container">
+                <p class="mb-1 text-footer">"I hope everybody could get rich and famous and will have everything they ever dreamed of, so they will know its not the answer" <br>
+                -Jim Carrey</p>
+                <p class="text-copyright fw-light">Copyright &copy 2022 Vinícius Buttini. Todos os direitos reservados</p>
+            </div>
+        </footer>
+        <!--Fim do rodapé-->
+
+    </body>
+</html>

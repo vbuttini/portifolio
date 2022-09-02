@@ -1,0 +1,80 @@
+/* Arquivo de estilização CSS */
+
+html, body {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #151515;
+    color: aliceblue;
+}
+
+.form-control:focus {
+    border-color: rgb(1, 147, 18);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(1, 147, 18);
+  }
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+    border: 2px solid white;
+}
+
+#btn-bg-1 {
+    background-color: #151515;
+}
+
+#btn-bg-2 {
+    background-color: #646363;
+}
+
+#btn-bg-3 {
+    background-color: #a7a6a6;
+}
+
+#home {
+    width: 100%;
+    height: 100%;
+}
+
+.icone {
+    font-size: 60px;
+    color: white;
+}
+
+.icone:hover {
+    color: rgb(1, 147, 18);
+}
+
+.text-footer{
+    font-size: 0.9rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.text-copyright{
+    font-size: 0.7rem;
+}
+
+.botao{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.botao:hover {
+    background-color: rgb(16, 65, 22);
+}
+
+.link{
+    color: rgb(255, 255, 255);
+}
